@@ -25,17 +25,12 @@ defineProps({
 
 const state = reactive({ count: 0 })
 
-
-
-duplicator()
-{
   document.querySelector(".duplicator").addEventListener("click", function (e) {
     const node = document.getElementById("card");
     let clone = node.cloneNode(true);
 
     document.body.appendChild(clone);
   });
-}
 
   const button = document.querySelector(".details");
   button.addEventListener("mouseenter", function () {
